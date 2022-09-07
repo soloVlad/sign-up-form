@@ -8,8 +8,8 @@
 
 :root {
     --dark-green: #596D48;
-    --light-gray: #E5E7EB;
-
+    --light-gray: #F7FAFF;
+    --form-middle: #fff;
     --main-logo-color: #fff;
 }
 
@@ -20,7 +20,7 @@
 
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Rubik', sans-serif;
     height: 100vh;
     display: flex;
 }
@@ -67,7 +67,89 @@ body {
     color: inherit;
 }
 
+
 .content-container {
     width: 60vw;
     height: 100%;
+    background-color: var(--light-gray);
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section {
+    padding: 15px 40px;
+}
+
+.form-section-light {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1), -6px -6px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--form-middle);
+}
+
+.content-text {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 400;
+    text-shadow: 0 1px var(--dark-green);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 40px 0 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.form-item > label {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dark-green);
+}
+
+.form-item > input {
+    width: 80%;
+    border: 1px solid rgba(89, 109, 72, 0.2);
+    border-radius: 5px;
+    height: 34px;
+}
+
+.create-button {
+    margin: 20px 0 40px 0;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--dark-green);
+    color: var(--form-middle);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.login-text {
+   /* margin-top: 35px; */
+}
+
+.login-link {
+    font-weight: 500;
+    color: var(--dark-green);
+    text-decoration: none;
 }

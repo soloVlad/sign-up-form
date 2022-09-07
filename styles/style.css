@@ -6,7 +6,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-green: #596D48;
+    --light-gray: #E5E7EB;
+}
+
 @font-face {
     font-family: Norse-Bold;
     src: url("./fonts/Norse-Bold.otf");
+}
+
+body {
+    font-family: Norse-Bold, sans-serif;
 }

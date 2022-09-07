@@ -9,13 +9,65 @@
 :root {
     --dark-green: #596D48;
     --light-gray: #E5E7EB;
+
+    --main-logo-color: #fff;
 }
 
 @font-face {
-    font-family: Norse-Bold;
-    src: url("./fonts/Norse-Bold.otf");
+    font-family: "Norse-Bold";
+    src: url("../fonts/Norse-Bold.otf");
 }
 
+
 body {
-    font-family: Norse-Bold, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.logo-container {
+    position: relative;
+    width: 40vw;
+    height: 100%;
+    background-color: var(--dark-green);
+    background-image: url("../img/halie-west.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--main-logo-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    height: 180px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: "Norse-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.credentials {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.credentials-link {
+    color: inherit;
+}
+
+.content-container {
+    width: 60vw;
+    height: 100%;
 }

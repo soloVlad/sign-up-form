@@ -11,6 +11,10 @@
     --light-gray: #F7FAFF;
     --form-middle: #fff;
     --main-logo-color: #fff;
+    --input-border: rgba(89, 109, 72, 0.2);
+    --input-border-focus: lightblue;
+    --light-section-shadow: rgba(0, 0, 0, 0.1);
+    --button-shadow: lightgray;
 }
 
 @font-face {
@@ -93,7 +97,7 @@ body {
 }
 
 .form-section-light {
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1), -6px -6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 6px var(--light-section-shadow), -6px -6px 6px var(--light-section-shadow);
     background-color: var(--form-middle);
 }
 
@@ -135,15 +139,15 @@ body {
 
 .form-item > input {
     width: 80%;
-    border: 1px solid rgba(89, 109, 72, 0.2);
+    border: 1px solid var(--input-border);
     border-radius: 5px;
     padding: 8px 14px;
 }
 
 .form-item > input:focus {
     outline: none;
-    border: 1px solid lightblue;
-    box-shadow: 1px 1px 3px 1px lightblue;
+    border: 1px solid var(--input-border-focus);
+    box-shadow: 1px 1px 3px 1px var(--input-border-focus);
 }
 
 .create-button {
@@ -156,7 +160,7 @@ body {
     text-transform: capitalize;
     font-weight: 500;
     font-size: 18px;
-    box-shadow: 2px 2px 8px 2px lightgray;
+    box-shadow: 2px 2px 8px 2px var(--button-shadow);
 }
 
 .create-button:hover {

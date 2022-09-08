@@ -13,6 +13,7 @@
     --main-logo-color: #fff;
     --input-border: rgba(89, 109, 72, 0.2);
     --input-border-focus: lightblue;
+    --input-border-error: rgba(255, 0, 1, 0.7);
     --light-section-shadow: rgba(0, 0, 0, 0.1);
     --button-shadow: lightgray;
 }
@@ -180,4 +181,15 @@ body {
 
 .login-link:hover {
     text-decoration: underline;
+}
+
+.form-item > .error,
+.form-item > .error:focus {
+    border: 1px solid var(--input-border-error);
+    box-shadow: 1px 1px 1px 1px var(--input-border-error), -1px -1px 1px 1px var(--input-border-error);
+}
+
+#password .error {
+    font-size: 100px;
+    content: "hi";
 }

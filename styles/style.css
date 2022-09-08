@@ -31,8 +31,10 @@ body {
 }
 
 .disable-select {
-    user-select: none; /* supported by Chrome and Opera */
-    -moz-user-select: none; /* Firefox */
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -moz-user-select: none;
+    /* Firefox */
 }
 
 .logo-container {
@@ -58,8 +60,6 @@ body {
     font-family: "Norse-Bold", sans-serif;
     font-weight: 700;
     font-size: 52px;
-
-
 }
 
 .logo-img {
@@ -129,7 +129,7 @@ body {
     gap: 3px;
 }
 
-.form-item > label {
+.form-item>label {
     width: 100%;
     font-size: 12px;
     font-weight: 700;
@@ -138,17 +138,21 @@ body {
     color: var(--dark-green);
 }
 
-.form-item > input {
+.form-item>input {
     width: 80%;
     border: 1px solid var(--input-border);
     border-radius: 5px;
     padding: 8px 14px;
 }
 
-.form-item > input:focus {
+.form-item>input:focus {
     outline: none;
     border: 1px solid var(--input-border-focus);
     box-shadow: 1px 1px 3px 1px var(--input-border-focus);
+}
+
+.form-item>input::placeholder {
+    opacity: 0.5;
 }
 
 .create-button {
@@ -170,7 +174,7 @@ body {
 }
 
 .login-text {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 .login-link {
@@ -183,13 +187,8 @@ body {
     text-decoration: underline;
 }
 
-.form-item > .error,
-.form-item > .error:focus {
+.form-item>.error,
+.form-item>.error:focus {
     border: 1px solid var(--input-border-error);
     box-shadow: 1px 1px 1px 1px var(--input-border-error), -1px -1px 1px 1px var(--input-border-error);
-}
-
-#password .error {
-    font-size: 100px;
-    content: "hi";
 }

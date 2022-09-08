@@ -25,6 +25,11 @@ body {
     display: flex;
 }
 
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+    -moz-user-select: none; /* Firefox */
+}
+
 .logo-container {
     position: relative;
     width: 40vw;
@@ -48,6 +53,8 @@ body {
     font-family: "Norse-Bold", sans-serif;
     font-weight: 700;
     font-size: 52px;
+
+
 }
 
 .logo-img {
